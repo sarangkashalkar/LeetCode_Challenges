@@ -37,6 +37,11 @@ for i in range(nth_index_of_list_2):
 final_list = list_of_values_list_1 + list_of_values_list_2  
 
 final_list.sort()  
-print(final_list)
+
+mid = len(final_list) // 2
+res = (final_list[mid] + final_list[~mid]) / 2
+ 
+
+print("Median of list is : " + str(res))
 
 
